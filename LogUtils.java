@@ -4,7 +4,7 @@ import android.util.Log;
 
 /**
  * author ：yanghj
- * created at ：2019/1/16
+ * created at ：2019/4/16
  * description ：log类，用于logcat日志打印，
  **/
 
@@ -112,8 +112,8 @@ public class LogUtils {
         long threadID = Thread.currentThread().getId();
         int lineNumber = traceElement.getLineNumber();
 
-        sb.append("thread：").append(threadName).append("-");
-        sb.append(threadID).append("  ");
+        sb.append("thread：").append(threadName).append(" [");
+        sb.append(threadID).append("]  ");
 
         sb.append(className).append(".");
         sb.append(methodName).append(" (");
